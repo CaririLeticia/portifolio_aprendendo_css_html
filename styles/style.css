@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #6d6875
+    --cor-secundaria: #e5989b
+    --cor-terciaria: #f6f6f6
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #6d6875;
+    color: #e5989b;
+}
+
+.foto-principal {
+    width: 50%;
+    height: auto;
+}
+
+.linkedin-icone {
+    width: 20px;
+    height: auto;
+}
+
+.insta-icone {
+    width: 24px;
+    height: auto;
+}
+
+.github-icone {
+    width: 24px;
+    height: auto;
+}
+
+
+.titulo-destaque {
+    color: #f4acb7;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;     /*Superior Direito Inferior Esquerdo*/
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600px;
+    color: white;
+    text-decoration: none;          /*Tira a linha*/
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.5rem;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif; 
+    color: white;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif; 
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__navegacao:hover {
+   background-color: #f4acb7;
+}
+
+.rodape {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 24px;
+    color: white;
+    background-color: #e5989b;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .cabecalho {
+        padding: 10%;     /*Superior Direito Inferior Esquerdo*/
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+}
